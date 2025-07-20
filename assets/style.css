@@ -136,6 +136,43 @@ a:link {
 a:visited {
   color: var(--wisteria);
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .content {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .dualcolumn {
+    flex-wrap: wrap; /* allow stacking */
+  }
+  
+  .column {
+    flex: 1 1 100%;  /* full width columns on small screens */
+    min-width: auto; /* override fixed min-width */
+    padding: 0.5em 0;
+  }
+
+  .header h1 {
+    font-size: 1.5em;
+  }
+
+  footer {
+    padding: 1em 0.5em 2em 0.5em;
+    font-size: 14px;
+  }
+
+  .link-box {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+}
+
+
 /*
 #img {
   width: 20%;
