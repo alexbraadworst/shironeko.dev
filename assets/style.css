@@ -47,6 +47,13 @@ body {
   font-size: 18px;
   /*word-break: break-word;*/
 }
+h1 {
+  text-align: center;
+  color: var(--wisteria)
+}
+h2, h3, h4 {
+  text-align: center;
+}
 
 .content{
   flex: 1 0 auto;
@@ -135,6 +142,52 @@ a:link {
 
 a:visited {
   color: var(--wisteria);
+}
+
+#blog-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    color: var(--main-light);
+  }
+
+#blog-table th,
+#blog-table td {
+  padding: 12px  24px;
+  border-bottom: 1px solid var(--purple);
+}
+
+#blog-table tr:hover {
+  background-color: #bd93f9;
+  color: #111;
+}
+
+#blog-table a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#files-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  color: var(--main-light);
+}
+
+#files-table th,
+#files-table td {
+  padding: 12px  24px;
+  border-bottom: 1px solid var(--purple);
+}
+
+#files-table tr:hover {
+  background-color: #bd93f9;
+  color: #111;
+}
+
+#files-table a {
+  color: inherit;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {

@@ -1,5 +1,5 @@
 /*!
- * blog-render.js - Blog post renderer
+ * render-blog.js - Blog index table renderer
  * Copyright (c) 2025 alexbraadworst
  * Licensed under the MIT License (MIT)
  * https://opensource.org/licenses/MIT

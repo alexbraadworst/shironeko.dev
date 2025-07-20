@@ -1,46 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>file shares</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>file shares</title>
   <link rel="stylesheet" href="/assets/style.css">
-  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
-  <style>
-    #files-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1em;
-      color: var(--main-light);
-    }
-
-    #files-table th,
-    #files-table td {
-      padding: 12px  24px;
-      border-bottom: 1px solid var(--purple);
-    }
-
-    #files-table tr:hover {
-      background-color: #bd93f9;
-      color: #111;
-    }
-
-    #files-table a {
-      color: inherit;
-      text-decoration: none;
-    }
-  </style>  
 </head>
-
 <body>
-
-<noscript>
-  <div style="background: #ffcccb; color: #900; padding: 1em; text-align: center; font-weight: bold;">
-      this site uses a lot of javascript, it'll prob look ass and miss a lot of stuff, im sorry about that im lazy :&lt;
-  </div>
-</noscript>
-
 <div class="header">
 <h1>shironeko.dev</h1>
   <nav>
@@ -56,28 +22,19 @@
       <a href="/contact.html">contact</a>
     </span>
   </nav>
-</div>
-
-<div class="content">
-  <h2 style="text-align: center;">file shares</h2>
-  <p style="text-align: center;">
-    i got a few nextcloud folders, feel free to download whatever you want off these    
-</p>
-  
+</div><div class="content">
+  <h2>file shares</h2>
   <table id="files-table">
-    <thead>
-      <tr>
-        <th>name</th>
-        <th>link</th>
-        <th>description</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
+    <thead><tr><th>Name</th><th>URL</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>music</td><td><a href="https://cloud.shironeko.dev/s/KSGJLwWRfGWzFKj" target="_blank">https://cloud.shironeko.dev/s/KSGJLwWRfGWzFKj</a></td><td>music that i like and have downloaded.</td></tr>
+      <tr><td>movies</td><td><a href="https://cloud.shironeko.dev/s/JbXkJyckjnqR6bT" target="_blank">https://cloud.shironeko.dev/s/JbXkJyckjnqR6bT</a></td><td>movies that i deemed worthy of putting on my computer</td></tr>
+      <tr><td>literature</td><td><a href="https://cloud.shironeko.dev/s/YtjMC6sQst4cksp" target="_blank">https://cloud.shironeko.dev/s/YtjMC6sQst4cksp</a></td><td>books, textbooks, and other literature</td></tr>
+      <tr><td>anime</td><td><a href="https://cloud.shironeko.dev/s/bA7X6qKws3LTAi6" target="_blank">https://cloud.shironeko.dev/s/bA7X6qKws3LTAi6</a></td><td>what it says on the tin</td></tr>
+      <tr><td>software mirror</td><td><a href="https://cloud.shironeko.dev/s/JbXkJyckjnqR6bT" target="_blank">https://cloud.shironeko.dev/s/JbXkJyckjnqR6bT</a></td><td>ISOs, shareware, etc</td></tr>
+    </tbody>
   </table>
-
-
 </div>
-<a href="/fileshare/files.json" style="display:none"></a>
 <footer>
 	<div class="footer_border"></div>
   <p>
@@ -89,8 +46,5 @@
     <a href="http://742cl2qutqydkjxn2cd6amskw2fxjmplvaqzfhzcrnsa2aydwdiwpjad.onion">onion</a>
     <a href="https://github.com/alexbraadworst/shironeko.dev/">source code</a>
   </p>
-</footer>
-</body>
-
-<script src="/assets/scripts/render-files.js"></script>
+</footer></body>
 </html>

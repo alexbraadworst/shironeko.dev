@@ -5,13 +5,13 @@
 # Licensed under the MIT License (MIT)
 # https://opensource.org/licenses/MIT
 
-# Path to blog content
-source "$(dirname "$0")/md2html.conf"
+# Path to blog directories
+source "$(dirname "$0")/dirs.conf"
 
 # Syntax for this config file:
 # DOCROOT="/path/to/docroot"
 # BLOG_DIR="$DOCROOT/path/to/blogs"
-# CSS_PATH="$DOCROOT/path/to/css"
+# CSS_PATH="/path/to/css"
 # HEADER_FILE="$DOCROOT/path/to/header"
 # FOOTER_FILE="$DOCROOT/path/to/footer"
 
