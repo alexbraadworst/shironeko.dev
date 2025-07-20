@@ -2,44 +2,19 @@
 <html lang="en">
 
 <head>
-  <title>blog</title>
+  <title>contact</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/style.css">
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
-  <style>
-    #blog-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1em;
-      color: var(--main-light);
-    }
-
-    #blog-table th,
-    #blog-table td {
-      padding: 12px  24px;
-      border-bottom: 1px solid var(--purple);
-    }
-
-    #blog-table tr:hover {
-      background-color: #bd93f9;
-      color: #111;
-    }
-
-    #blog-table a {
-      color: inherit;
-      text-decoration: none;
-    }
-  </style>
 </head>
-
-<body>
 
 <noscript>
   <div style="background: #ffcccb; color: #900; padding: 1em; text-align: center; font-weight: bold;">
       this site uses a lot of javascript, it'll prob look ass and miss a lot of stuff, im sorry about that im lazy :&lt;
   </div>
 </noscript>
+<body>
 
 <div class="header">
 <h1>shironeko.dev</h1>
@@ -58,23 +33,44 @@
   </nav>
 </div>
 
-<div class="content">
-  <h2 style="text-align: center;">blog</h2>
-  <p style="text-align: center;">
-    here are my dumb blog posts, or anything else i want to publish here. i write them because I'm a dumbass, hope you enjoy :'&lt;
-  </p>
-  
-  <table id="blog-table">
-    <thead>
-      <tr>
-        <th>title</th>
-        <th>date</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
 
+<div class="content" style="text-align: center;">
 
+  <p><strong>there are several ways to contact me if you'd like:</strong></p>
+
+    <div class="dualcolumn">
+        <div class="column">
+        <h2>clearnet</h2>
+        <ul class="no-bullets">
+            <li class="link-box">
+                email #1: zlxkks [at] posteo [dot] com (<a href="/pgp-posteo.asc">pgp</a>)
+            </li>            
+            <li class="link-box">
+                email #2: juniii [at] waifu [dot] club (<a href="/pgp-waifu.club.asc">pgp</a>)
+            </li>
+            <li class="link-box">
+                matrix: @kuroneko:envs.net
+            </li>
+        </ul>
+        </div>
+
+        <div class="column">
+        <h2>hidden</h2>
+        <ul class="no-bullets">
+            <li class="link-box">
+                email (i2p): shironeko [at] mail [dot] i2p
+                (<a href=/pgp-i2p.asc>pgp</a>)
+            </li>
+            <li class="link-box">
+                ricochet: send me a pgp encrypted email first
+            </li>
+            <li class="link-box">
+                cwtch: send me a pgp encrypted email first
+            </li>
+        </ul>
+        </div>
+    </div>
+    
 </div>
 
 <footer>
@@ -91,5 +87,6 @@
 </footer>
 </body>
 
-<script src="/assets/scripts/render-blog.js"></script>
+<script src="/assets/scripts/headerfooter.js"></script>
+
 </html>

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "music",
+    "url": "https://cloud.shironeko.dev/s/KSGJLwWRfGWzFKj",
+    "purpose": "music that i like and have downloaded."
+  },
+  {
+    "name": "movies",
+    "url": "https://cloud.shironeko.dev/s/JbXkJyckjnqR6bT",
+    "purpose": "movies that i deemed worthy of putting on my computer"
+  },
+  {
+    "name": "literature",
+    "url": "https://cloud.shironeko.dev/s/YtjMC6sQst4cksp",
+    "purpose": "books, textbooks, and other literature"
+  },
+  {
+    "name": "anime",
+    "url": "https://cloud.shironeko.dev/s/bA7X6qKws3LTAi6",
+    "purpose": "what it says on the tin"
+  },
+  {
+    "name": "software mirror",
+    "url": "https://cloud.shironeko.dev/s/JbXkJyckjnqR6bT",
+    "purpose": "ISOs, shareware, etc"
+  }
+]
