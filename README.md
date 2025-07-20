@@ -1,6 +1,6 @@
 # shironeko.dev
 My personal site containing writing, software mirrors, and public resources.
-This repository contains the static site source for shironeko.dev and its darknet mirrors.
+This repository contains the static site source for shironeko.dev and its mirrors.
 
 ## Licensing
 All literary works, writings, and textual content are licensed under CC-BY-NC-SA 4.0 International. 
