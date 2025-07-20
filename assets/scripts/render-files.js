@@ -5,7 +5,7 @@
  * https://opensource.org/licenses/MIT
  */
 
-fetch('files.json')
+fetch('/fileshare/files.json')
   .then(res => res.json())
   .then(files => {
     const tbody = document.querySelector('#files-table tbody');

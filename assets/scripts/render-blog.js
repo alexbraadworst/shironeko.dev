@@ -5,7 +5,7 @@
  * https://opensource.org/licenses/MIT
  */
 
-fetch('posts.json')
+fetch('/blog/posts.json')
   .then(res => res.json())
   .then(posts => {
     const tbody = document.querySelector('#blog-table tbody');
