@@ -234,8 +234,9 @@ a:visited {
   /*animation: scroll-left 60s linear infinite;*/
 }
 @media (max-width: 800px) {
-  .badge-scroller {
-    animation: scroll-left 60s linear infinite;
+  .badge-row {
+    flex-direction:column;
+    align-items: center;
   }
 }
 
