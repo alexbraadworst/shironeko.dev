@@ -1,14 +1,13 @@
 2025-07-20: An easier way
 ========================
 
-# An easier way!
 I can't believe how stupidly I was using this thing. The previous workflow was:
 
 1. Write the post in LibreOffice
 2. Paste it into the Neocities HTML editor (the web-based one)
 3. Manually format it
 
-No wonder I was never consistent making these things! It took about 2 hours to format the fucking blog post let alone actually writing it. So I've got a new solution. I wrote a little bash script (you can find it at [/assets/scripts/md2html.sh](file:///home/alekks/repositories/shironeko.dev/assets/scripts/md2html.sh)) that converts the Markdown files from my text editor to HTML, with all the formatting that I want. Seems to work ok... On that topic, today and yesterday was the first time I properly modded and put content on my site. It was pretty barren. Now that it's summer (end of it but summer nonetheless) I'll have more time to put my shit on here, and mayhaps it'll be of some use to you. I also got my onion mirror back up working. :>
+No wonder I was never consistent making these things! It took about 2 hours to format the fucking blog post let alone actually writing it. So I've got a new solution. I wrote a little bash script (you can find it at [/assets/scripts/md2html.sh](../../../assets/scripts/md2html.sh)) that converts the Markdown files from my text editor to HTML, with all the formatting that I want. Seems to work ok... On that topic, today and yesterday was the first time I properly modded and put content on my site. It was pretty barren. Now that it's summer (end of it but summer nonetheless) I'll have more time to put my shit on here, and mayhaps it'll be of some use to you. I also got my onion mirror back up working. :>
 
 ## So what do I have to say today? 
 Oh boy (or girl, or other) do I have a lot to tell you. I finally locked in and toughened up my OPSEC for all my personal computer/phone usage this week. It's probably still shit but it's better than it was before. 

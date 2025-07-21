@@ -1,9 +1,21 @@
 #!/bin/bash
-set -e
+
+# headerfooter.sh - Header and footer HTML loader
+# Copyright (c) 2025 alexbraadworst
+# Licensed under the MIT License (MIT)
+# https://opensource.org/licenses/MIT
 
 # Load configuration
 source "$(dirname "$0")/dirs.conf"
 
+# Syntax for this config file:
+# DOCROOT="/path/to/docroot"
+# BLOG_DIR="$DOCROOT/path/to/blogs"
+# CSS_PATH="/path/to/css"
+# HEADER_FILE="$DOCROOT/path/to/header"
+# FOOTER_FILE="$DOCROOT/path/to/footer"
+
+set -e
 # Check required files
 [ ! -f "$HEADER_FILE" ] && { echo "Header file missing"; exit 1; }
 [ ! -f "$FOOTER_FILE" ] && { echo "Footer file missing"; exit 1; }
