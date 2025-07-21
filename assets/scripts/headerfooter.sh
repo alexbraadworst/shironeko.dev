@@ -18,20 +18,48 @@ update_file() {
   cp "$file" "$backup"
 
   # Extract body with sed, replace header/footer by matching <div id="header">...</div> etc.
-  awk -v header="$(<"$HEADER_FILE")" -v footer="$(<"$FOOTER_FILE")" '
-    BEGIN { h=0; f=0 }
-    /<div[^>]+id=["'"'"']header["'"'"']/ { print header; h=1; next }
-    /<div[^>]+id=["'"'"']footer["'"'"']/ { print footer; f=1; next }
+awk -v header="$(<"$HEADER_FILE")" -v footer="$(<"$FOOTER_FILE")" '
+  BEGIN { in_header=0; in_footer=0 }
+  
+  # Detect header start tag and print replacement, then skip original block
+  /<div[^>]+id=["'"'"']header["'"'"']/ {
+    print header
+    in_header=1
+    next
+  }
+  
+  # Detect footer start tag and print replacement, then skip original block
+  /<footer[^>]*>/ {
+    print footer
+    in_footer=1
+    next
+  }
+  
+  # Detect header end tag, stop skipping lines
+  in_header && /<\/div>/ {
+    in_header=0
+    next
+  }
+  
+  # Detect footer end tag, stop skipping lines
+  in_footer && /<\/footer>/ {
+    in_footer=0
+    next
+  }
+  
+  # Skip lines inside header or footer blocks
+  in_header || in_footer {
+    next
+  }
+  
+  # Print lines outside header/footer
+  { print }
+' "$backup" > "$file"
 
-    h && /<\/div>/ { h=0; next }
-    f && /<\/div>/ { f=0; next }
-
-    !(h || f) { print }
-  ' "$backup" > "$file"
 }
 
 # Find and process all .html files under DOCROOT
-find "$DOCROOT" -type f -name '*.html' | while read -r htmlfile; do
+find "$DOCROOT" -type f -name '*.html' ! -path "*/assets/*" | while read -r htmlfile; do
   update_file "$htmlfile"
 done
 
