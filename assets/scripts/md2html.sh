@@ -54,7 +54,7 @@ find "$BLOG_DIR" -type f -name "*.md" | while read -r mdfile; do
     # Insert the converted body
     echo "$body"
 
-    echo '<a href="/blogs"><em>Back to index</em></a>'
+    echo '<a href="/blog"><em>Back to index</em></a>'
 
     # End content div
     echo '</div>'

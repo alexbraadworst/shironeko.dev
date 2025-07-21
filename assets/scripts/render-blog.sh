@@ -40,6 +40,10 @@ fi
 
   echo '<div class="content">'
   echo "  <h2>$TITLE</h2>"
+  echo '   <p style="text-align: center;">'
+  echo "      here's my blog posts and other writings. i write them and put them on this random website because i'm stupid. "
+  echo "      it's mostly a mix of creative writing, rants, and other stuff, hope you derive some enjoyment out of reading them :>"
+  echo    "</p>"
   echo '  <table id="blog-table">'
   echo '    <thead><tr><th>title</th><th>date</th></tr></thead>'
   echo '    <tbody>'

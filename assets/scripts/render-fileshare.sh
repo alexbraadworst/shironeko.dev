@@ -39,6 +39,10 @@ fi
 
   echo '<div class="content">'
   echo "  <h2>$TITLE</h2>"
+  echo '   <p style="text-align: center;">'
+  echo "      i've got a nextcloud server, thought i'd share some of the files off it that might be of interest to others. most of these were obtained through the kindness of others, "
+  echo "      be it torrenting (seed your torrents) or soulseek, and through me purchasing them. have fun!"
+  echo    "</p>"
   echo '  <table id="files-table">'
   echo '    <thead><tr><th>Name</th><th>URL</th><th>Purpose</th></tr></thead>'
   echo '    <tbody>'
