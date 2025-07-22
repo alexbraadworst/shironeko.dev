@@ -1,3 +1,4 @@
 .git
 blog/notes.sqlite
 assets/scripts/dirs.conf
+*.md

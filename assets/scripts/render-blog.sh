@@ -37,7 +37,7 @@ fi
   echo '<body>'
 
   [ -f "$HEADER_FILE" ] && cat "$HEADER_FILE"
-
+  echo '<div class="page">'
   echo '<div class="content">'
   echo "  <h2>$TITLE</h2>"
   echo '   <p style="text-align: center;">'
@@ -55,6 +55,7 @@ fi
 
   echo '    </tbody>'
   echo '  </table>'
+  echo '</div>'
   echo '</div>'
 
   [ -f "$FOOTER_FILE" ] && cat "$FOOTER_FILE"

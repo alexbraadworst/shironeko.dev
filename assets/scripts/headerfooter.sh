@@ -34,7 +34,7 @@ awk -v header="$(<"$HEADER_FILE")" -v footer="$(<"$FOOTER_FILE")" '
   BEGIN { in_header=0; in_footer=0 }
   
   # Detect header start tag and print replacement, then skip original block
-  /<div[^>]+id=["'"'"']header["'"'"']/ {
+  /<div[^>]+class=["'"'"']header["'"'"']/ {
     print header
     in_header=1
     next

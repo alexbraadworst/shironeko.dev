@@ -17,7 +17,7 @@ source "$(dirname "$0")/dirs.conf"
 
 
 # Find all .md files
-find "$BLOG_DIR" -type f -name "*.md" | while read -r mdfile; do
+find "$BLOG_DIR" "$GALLERY_DIR" -type f -name "*.md" | while read -r mdfile; do
   htmlfile="${mdfile%.md}.html"
   filename=$(basename "$mdfile" .md)
   title=$(echo "$filename" | sed 's/-/ /g' | sed 's/\b\(.\)/\u\1/g') # Title Case
@@ -39,24 +39,28 @@ find "$BLOG_DIR" -type f -name "*.md" | while read -r mdfile; do
     echo '</head>'
     echo '<body>'
 
-    echo '<noscript>'
-    echo '  <div style="background: #ffcccb; color: #900; padding: 1em; text-align: center; font-weight: bold;">'
-    echo '      this site uses a lot of javascript, it'\''ll prob look ass and miss a lot of stuff, im sorry about that im lazy :&lt;'
-    echo '  </div>'
-    echo '</noscript>'
-
     # Optional shared header
     [ -f "$HEADER_FILE" ] && cat "$HEADER_FILE"
 
+    # bg div
+    echo '<div class="page">'
     # Start content div
     echo '<div class="content">'
 
     # Insert the converted body
     echo "$body"
 
-    echo '<a href="/blog"><em>Back to index</em></a>'
+   # Back link depending on parent dir
+    if [[ "$mdfile" == "$GALLERY_DIR"* ]]; then
+      echo '<a href="/gallery"><em>Back to index</em></a>'
+    else
+      echo '<a href="/blog"><em>Back to index</em></a>'
+    fi
 
     # End content div
+    echo '</div>'
+
+    # end bg div
     echo '</div>'
 
 

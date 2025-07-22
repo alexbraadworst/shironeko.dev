@@ -36,7 +36,7 @@ fi
   echo '<body>'
 
   [ -f "$HEADER_FILE" ] && cat "$HEADER_FILE"
-
+  echo '<div class="page">'
   echo '<div class="content">'
   echo "  <h2>$TITLE</h2>"
   echo '   <p style="text-align: center;">'
@@ -44,7 +44,7 @@ fi
   echo "      be it torrenting (seed your torrents) or soulseek, and through me purchasing them. have fun!"
   echo    "</p>"
   echo '  <table id="files-table">'
-  echo '    <thead><tr><th>Name</th><th>URL</th><th>Purpose</th></tr></thead>'
+  echo '    <thead><tr><th>name</th><th>url</th><th>purpose</th></tr></thead>'
   echo '    <tbody>'
 
   jq -r '.[] | [.name, .url, .purpose] | @tsv' "$FILES_JSON" | while IFS=$'\t' read -r name url purpose; do
@@ -53,6 +53,7 @@ fi
 
   echo '    </tbody>'
   echo '  </table>'
+  echo '</div>'
   echo '</div>'
 
   [ -f "$FOOTER_FILE" ] && cat "$FOOTER_FILE"
