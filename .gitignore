@@ -1,4 +1,5 @@
 .git
+notes.sqlite
 gallery/notes.sqlite
 blog/notes.sqlite
 blog/trash
