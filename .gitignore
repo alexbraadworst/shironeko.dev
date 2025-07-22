@@ -1,5 +1,6 @@
 .git
 blog/notes.sqlite
+blog/trash
 assets/scripts/dirs.conf
 *.md
 !README.md
