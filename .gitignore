@@ -3,4 +3,5 @@ blog/notes.sqlite
 blog/trash
 assets/scripts/dirs.conf
 *.md
-!README.md
+!README.md 
+gallery/notes.sqlite
