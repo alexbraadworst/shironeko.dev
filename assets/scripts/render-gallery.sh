@@ -39,14 +39,18 @@ find "$IMAGE_DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png'
   echo '    <thead><tr><th>title</th><th style="text-align: center;">image(s)</th><th style="text-align:right;">date</th></tr></thead>'
   echo '    <tbody>'
 
-  jq -r '.[] | [.title, .url, .date, .images[]?] | @tsv' "$POSTS_JSON" | \
-    awk -F'\t' 'BEGIN { OFS="\t" } {
-      titles[$2]=$1; dates[$2]=$3; images[$2]=images[$2] "<img src=\"" $4 "\" style=\"max-height:100px; margin:2px;\">"
-    } END {
-      for (url in titles) {
-        print "<tr><td><a href=\"" url "\">" titles[url] "</a></td><td style=\"text-align:center\">" images[url] "</td><td style=\"text-align:right; white-space: nowrap;\">" dates[url] "</td></tr>"
-      }
-    }'
+  jq -r '.[] | [.title, .url, .date, (.images | join("|"))] | @tsv' "$POSTS_JSON" | \
+  awk -F'\t' '{
+    title=$1; url=$2; date=$3; images_str=$4;
+    n=split(images_str, imgs, "|");
+    imgs_html="<div style=\"display:flex; justify-content:center; gap:4px; flex-wrap: wrap;\">";
+    for(i=1; i<=n; i++) {
+      imgs_html = imgs_html "<img src=\"" imgs[i] "\" style=\"max-height:100px;\">";
+    }
+    imgs_html = imgs_html "</div>";
+    print "<tr><td><a href=\"" url "\">" title "</a></td><td style=\"text-align:center;\">" imgs_html "</td><td style=\"text-align:right; white-space: nowrap;\">" date "</td></tr>";
+  }'
+
 
 
   echo '    </tbody>'
