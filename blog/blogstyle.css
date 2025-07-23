@@ -1,0 +1,17 @@
+
+:root{
+    --wisteria2: #9f91ad;
+    --wisteria3: #8c7f99;
+    --wisteria: #CAB8DD;
+}
+
+
+.content {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border: 2px solid var(--wisteria);
+    background-color: var(--wisteria2);
+    opacity: 82%
+}

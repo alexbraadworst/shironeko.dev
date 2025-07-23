@@ -36,6 +36,7 @@ find "$BLOG_DIR" "$GALLERY_DIR" -type f -name "*.md" | while read -r mdfile; do
     echo "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
     echo "  <title>$title</title>"
     echo "  <link rel=\"stylesheet\" href=\"$CSS_PATH\">"
+    echo "  <link rel=\"stylesheet\" href="/blog/blogstyle.css">"
     echo '</head>'
     echo '<body>'
 

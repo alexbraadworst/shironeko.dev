@@ -1,6 +1,7 @@
 .git
 notes.sqlite
 gallery/notes.sqlite
+gallery/trash
 blog/notes.sqlite
 blog/trash
 assets/scripts/dirs.conf

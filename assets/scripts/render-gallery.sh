@@ -26,6 +26,7 @@ find "$IMAGE_DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png'
   echo '  <meta name="viewport" content="width=device-width, initial-scale=1.0">'
   echo "  <title>$TITLE</title>"
   echo "  <link rel=\"stylesheet\" href=\"$CSS_PATH\">"
+  echo "  <link rel=\"stylesheet\" href="/blog/blogstyle.css">"
   echo '</head>'
   echo '<body>'
 
