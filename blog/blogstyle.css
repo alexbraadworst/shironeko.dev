@@ -12,6 +12,9 @@
     padding-left: 0.5em;
     padding-right: 0.5em;
     border: 2px solid var(--wisteria);
-    background-color: var(--wisteria2);
-    opacity: 82%
+    background-color: rgba(159, 145, 173, 0.82);
+    
+}
+.content img {
+    opacity: 1;
 }
