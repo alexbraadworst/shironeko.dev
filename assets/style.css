@@ -103,6 +103,9 @@ h3, h4 {
 .header a {
   color: var(--wisteria);
 }
+.header h1 {
+  margin: 0.1em;
+}
 
 .link-box {
   display: block;
