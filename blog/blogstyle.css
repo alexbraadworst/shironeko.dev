@@ -16,5 +16,6 @@
     
 }
 .content img {
-    opacity: 1;
+    width: 100%;
+    max-width: fit-content;
 }
