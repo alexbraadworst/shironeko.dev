@@ -7,6 +7,8 @@
 
 # Path to blog directories
 source "$(dirname "$0")/dirs.conf"
+echo "BLOG_DIR=$BLOG_DIR"
+echo "GALLERY_DIR=$GALLERY_DIR"
 
 # Syntax for this config file:
 # DOCROOT="/path/to/docroot"
