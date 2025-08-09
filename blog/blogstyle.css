@@ -13,7 +13,7 @@
     padding-right: 0.5em;
     border: 2px solid var(--wisteria);
     background-color: rgba(159, 145, 173, 0.82);
-    
+    text-align: center;
 }
 .content img {
     max-width: 100%;
@@ -22,4 +22,5 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 }
