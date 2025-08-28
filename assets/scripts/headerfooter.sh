@@ -70,9 +70,24 @@ awk -v header="$(<"$HEADER_FILE")" -v footer="$(<"$FOOTER_FILE")" '
 
 }
 
-# Find and process all .html files under DOCROOT
+# Find and process all .html files under DOCROOT except those excluded
+EXCLUDE=("$DOCROOT/aboutme.html")
+
+should_skip() {
+  local file="$1"
+  for skip in "${EXCLUDE[@]}"; do
+    [[ "$file" == *"$skip" ]] && return 0
+  done
+  return 1
+}
+
 find "$DOCROOT" -type f -name '*.html' ! -path "*/assets/*" | while read -r htmlfile; do
-  update_file "$htmlfile"
+  if should_skip "$htmlfile"; then
+    echo "Skipping $htmlfile"
+  else
+    update_file "$htmlfile"
+  fi
 done
+
 
 echo "All files updated with new header and footer. Backups saved as .bak"

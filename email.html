@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <title>email hosting</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2022 11 08</title>
   <link rel="stylesheet" href="/assets/style.css">
-  <link rel="stylesheet" href=/blog/blogstyle.css>
+  <link rel="stylesheet" href="/blog/blogstyle.css">
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 </head>
+
 <body>
+
+
 <div class="header">
 <h1>shironeko.dev</h1>
   <nav>
@@ -28,36 +33,42 @@
     </span>
   </nav>
 </div>
+
 <div class="page">
 <div class="content">
-<h1 id="section">2022-11-08</h1>
-<p>I was thinking I should start writing some fanfic or something — I’ve
-got quite a few ideas laying around and the means to execute them but
-I’ve never thought of actually revealing them to the outside world, out
-of some blind fear that I might be ridiculed for poor writing. I know
-that most of the fears that I have are completely unfounded, but I still
-find them hard to overcome. I feel as though there is some sort of
-invisible barrier forcing me to bottle up these prompts and stories that
-I’ve written.</p>
-<p>Now, I know that I’m realistically the only person reading this at
-the moment — blogs as an institution are on the backfoot and mine
-certainly isn’t going to be read by many people outside of myself —
-indeed, the only reason I have written a lot of what I have is because I
-feel that there is a sense of privacy in this domain. And why should I
-worry? No one besides me both possesses the link to this site and knows
-what I’ve been writing on it. I think this offers a space for me to
-write more creatively and reflect on some of my more underlying thoughts
-without having to water them down to pander to anyone else. That being
-said, this is on the internet — if someone wanted to, they could read
-everything I’d written on here and I would have no means to stop them.
-That is, of course, if they actually know of this site’s existence,
-which is slim at best. I’m more likely to be read by some moderator of
-WordPress itself or by some future tyrannical government than anyone who
-is actually interested in what I have to say. And I like that, to an
-extent.</p>
-<p>I might start posting some HoloEN fics on AO3 or some other related
-site soon, who knows? But for now, I feel quite well staying here.</p>
-<a href="/blog"><em>Back to index</em></a>
+    <h1>email hosting</h1>
+    <p>
+        i offer free email hosting to a small number of people i personally know. right now i’m too busy to open it up widely, so accounts are limited to friends.
+         if you know me in real life, contact me through my usual channels and i'll send you setup instructions.
+    </p>
+    <h2>mailbox details</h2>
+    <p>
+        emails are hosted via mailcow on my own self-hosted debian 12 server, which i control fully. uptime is solid (100% last month) and there's a ups, so it's very stable.
+        i will offer:
+        <ul class="no-bullets">
+            <li>- 15 gb of space per mailbox    </li>
+            <li>- up to 2 mailboxes per person   </li>
+            <li>- up to 5 aliases per mailbox    </li>
+        </ul>
+        i run proper dns records (spf, dkim, dmarc) and maintain a clean ip reputation, so mail deliverability is solid. in my own use, i’ve never had issues with sending or receiving messages. 
+        you can expect reliable service, and i'll help troubleshoot anything you need personally.
+    </p>
+    <p>
+        the physical drives storing your emails are encrypted at rest with luks, so if the server is ever seized, the data can't be read. do note that this doesn't protect data once
+        the server's running and it doesn't protect it from me, the administrator. the system uses raid 5 for redundancy in case of hardeware failure.
+    </p>
+    <p>
+        if you hog my bandwidth with spam or for illegal shit, i <em>WILL</em> nuke your account. please don't make my life harder than it already is. plus,
+        if you get an account, you almost certainly know me in real life, so don't make things awkward. 
+    </p>
+    <h3>brief reality check:</h3>
+    <p>
+        email is inherently insecure and you cannot trust your email provider. literally any e-mail provider (including me) can read all of your emails. 
+        regardless of if you use some fancy encrypted email provider or not, even if they encrypt mail before storing it, no matter what swiss privacy laws they're following, 
+        they still receive the email in plaintext first. if your life and/or freedom depends on email, don't use email. use something like ricochet or briar. 
+        i highly encourage you to encrypt mail with gpg if possible. this prevents me from handling it in plaintext. <a href="https://gist.github.com/sepehr/5a2a8949afa7e74d0118">this gpg setup guide</a> 
+        is a pretty good one to get you started.
+    </p>
 </div>
 </div>
 <footer>
