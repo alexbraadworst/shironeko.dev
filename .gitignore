@@ -7,3 +7,5 @@ blog/trash
 assets/scripts/dirs.conf
 *.md
 !README.md 
+.sync*
+.nextcloud*
